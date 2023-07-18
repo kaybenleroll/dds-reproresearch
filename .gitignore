@@ -3,3 +3,7 @@
 
 .Renviron
 
+output.log
+
+full_deps.dot
+full_deps.png
