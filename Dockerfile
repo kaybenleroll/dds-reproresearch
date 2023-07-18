@@ -27,8 +27,10 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime \
     DT \
     evir \
     knitr \
+    markdown \
     parallelly \
     poweRlaw \
+    quarto \
     rmdformats \
     rprojroot \
     sf \

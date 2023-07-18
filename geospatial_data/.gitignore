@@ -1,0 +1,10 @@
+*.zip
+
+*.shp
+*.csv
+*.prj
+*.shx
+*.cpg
+*.dbf
+
+license.txt
