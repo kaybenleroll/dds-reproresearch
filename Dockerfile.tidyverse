@@ -12,7 +12,6 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime \
     htop \
     less \
     libgdal-dev \
-    libglpk-dev \
     libproj-dev \
     libudunits2-dev \
     libxml2-dev \
@@ -28,10 +27,8 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime \
     DT \
     evir \
     knitr \
-    markdown \
     parallelly \
     poweRlaw \
-    quarto \
     rmdformats \
     rprojroot \
     sf \
@@ -68,3 +65,12 @@ USER root
 
 RUN chown -R rstudio:rstudio /home/rstudio \
   && chmod ugo+rx /home/rstudio
+
+
+ARG BUILD_DATE
+
+LABEL org.opencontainers.image.source="https://github.com/Sea3R-Analytics/sea3r_repo" \
+      org.opencontainers.image.authors="Mick Cooney <mcooney@describedata.com>" \
+      org.label-schema.build-date=$BUILD_DATE
+
+
